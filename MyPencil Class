@@ -1,0 +1,67 @@
+package com.company;
+
+public class MyPencil {
+
+    // Data or State Information
+    // -------------------------
+    private String name;
+    private double length;
+    private boolean sharp;
+
+
+    // Access Methods (Change, or Retrieve)
+    // ------------------------------------
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setLength(int length) {
+
+        this.length = length;
+    }
+
+    public void setLength(float length) {
+
+        this.length = length;
+    }
+
+    public void setLength(double length) {
+
+        this.length = length;
+    }
+
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setSharp(boolean sharp) {
+        this.sharp = sharp;
+    }
+
+    public boolean isSharp() {
+        return sharp;
+    }
+
+
+    public void  display(){
+
+        System.out.println("Pencil Name: " + name);
+        System.out.println("Pencil Name: " + length);
+
+        if (this.isSharp()) {
+            System.out.println("Pencil is sharp");
+        } else {
+            System.out.println("Pencil is needs to be sharpened");
+        }
+
+
+    }
+
+
+}
