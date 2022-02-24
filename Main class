@@ -1,0 +1,73 @@
+package com.company;
+
+import javafx.scene.control.Separator;
+
+import java.util.Scanner;
+
+public class Main {
+
+    // Constant declarations for Main class only
+    private final static int INVALID = -1;
+    private final static String seperator = "\n===========================================================================\n";
+
+    public static void main(String[] args) {
+
+        System.out.println("\n\tICS4U First Java Program: Main & Utility Classes\n");
+
+        MyPencil pencil = new MyPencil();
+
+
+        String pencilname;
+        int length;
+        boolean done;
+
+        Scanner scan = new Scanner(System.in);                                  //allows the scanner to read for inputs
+
+        // user input with a scanner for the pencil name and length
+        System.out.println(seperator);
+
+        System.out.println("Please enter your Pencil name:");
+        pencil.setName(scan.next());
+
+
+        System.out.println("Please enter your Pencil length:");
+        pencil.setLength(scan.nextInt());
+
+
+
+
+
+
+
+        pencil.setName("pencil1");
+        pencil.setLength(17);
+        pencil.setSharp(true);
+
+        System.out.println("\n===============================================");
+
+        pencil.display();
+
+        System.out.println("===============================================\n");
+
+        pencil.setSharp(false);
+
+        System.out.println("\n===============================================");
+
+        pencil.display();
+
+        System.out.println("===============================================\n");
+
+
+        pencil.setName("pencil2");
+        pencil.setLength(17.89);
+        pencil.setSharp(true);
+
+
+        System.out.println("\n===============================================");
+
+        pencil.display();
+
+        System.out.println("===============================================\n");
+
+    }
+}
